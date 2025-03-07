@@ -8,4 +8,7 @@ Route::get('/detail',[PostController::class,'detail']);
       
 
 Route::get('/oldurl',[PostController::class,'oldUrl']);
+
+Route::get('/new',[PostController::class,'oldUrl']);
+
 Route::get('/newposturl',[PostController::class,'newUrl'])->name('newurl');
