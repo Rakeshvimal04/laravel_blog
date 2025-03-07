@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function index(){
-        return view('index');
+        return view('posts.index');
     }
 
     public function oldUrl(){
@@ -16,5 +16,9 @@ class PostController extends Controller
 
     public function newUrl(){
         return "<h1>new url page</h1>";
+    }
+
+    public function detail(){
+        return view('posts.detail');
     }
 }
